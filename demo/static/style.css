@@ -1,0 +1,179 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   style.css — Streamlit Demo Dashboard
+   Explainable Multimodal Diabetes/Metabolic Risk Framework
+   ───────────────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    background: linear-gradient(160deg, #0f0c29, #1a1a2e, #16213e);
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    color: white;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.main-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Section headings */
+h2 {
+    font-weight: 600;
+    color: #e2e8f0;
+    border-left: 4px solid #667eea;
+    padding-left: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+/* Cards */
+.stExpander {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(10px);
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    padding: 0.75rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5) !important;
+}
+
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #f093fb, #f5576c) !important;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4) !important;
+}
+
+/* Progress bars */
+.stProgress > div > div > div {
+    background: linear-gradient(90deg, #667eea, #764ba2) !important;
+    border-radius: 4px !important;
+}
+
+/* Sliders */
+.stSlider > div > div > div > div {
+    background: linear-gradient(90deg, #667eea, #764ba2) !important;
+}
+
+/* File uploader */
+.stFileUploader {
+    border: 2px dashed rgba(102, 126, 234, 0.4) !important;
+    border-radius: 12px !important;
+    background: rgba(102, 126, 234, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.stFileUploader:hover {
+    border-color: #667eea !important;
+    background: rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Metrics */
+[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Success/Warning/Error */
+.stSuccess {
+    background: rgba(85, 168, 104, 0.15) !important;
+    border: 1px solid rgba(85, 168, 104, 0.4) !important;
+    border-radius: 10px !important;
+    color: #55a868 !important;
+}
+
+.stWarning {
+    background: rgba(221, 132, 82, 0.15) !important;
+    border: 1px solid rgba(221, 132, 82, 0.4) !important;
+    border-radius: 10px !important;
+}
+
+.stError {
+    background: rgba(196, 78, 82, 0.15) !important;
+    border: 1px solid rgba(196, 78, 82, 0.4) !important;
+    border-radius: 10px !important;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1a1a2e, #16213e) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-testid="stSidebar"] h2 {
+    color: #a78bfa !important;
+    border-left-color: #a78bfa !important;
+}
+
+/* Tables */
+.stDataFrame {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+/* Images */
+.stImage img {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Caption */
+.stCaption {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-style: italic;
+}
+
+/* Dividers */
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 1.5rem 0;
+}
+
+/* Select boxes */
+.stSelectbox > label {
+    color: #cbd5e1 !important;
+}
+
+/* Plot backgrounds */
+.element-container:has(canvas) {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 0.5rem;
+}
